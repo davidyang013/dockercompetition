@@ -22,4 +22,4 @@ VOLUME /artifactory-${ARTIFACTORY_VERSION}/etc
 WORKDIR /artifactory-${ARTIFACTORY_VERSION}
 
 # Run the embedded tomcat container
-ENTRYPOINT artifactory-*/bin/artifactory.sh
+ENTRYPOINT /artifactory-${ARTIFACTORY_VERSION}/bin/artifactory.sh
